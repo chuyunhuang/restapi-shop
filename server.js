@@ -5,4 +5,6 @@ const port = process.env.PPRT || 3001;
 
 const server = http.createServer(app)
 
-server.listen(port);
+server.listen(port, () => {
+  console.log(`server listening on ${port}`)
+});
